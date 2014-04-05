@@ -28,6 +28,7 @@
     <maven.jar.plugin.version>2.4</maven.jar.plugin.version>
     <gmaven.plugin.version>1.0</gmaven.plugin.version>
     <buildnumber.maven.plugin.version>1.0</buildnumber.maven.plugin.version>
+    <spencerPerceval.version>0.0.4</spencerPerceval.version>
   </properties>
 
   <scm>
@@ -39,6 +40,11 @@
   <name>${project.artifactId}</name>
 
   <dependencies>
+    <dependency>
+      <groupId>uk.co.epii.conservatives</groupId>
+      <artifactId>spencerperceval</artifactId>
+      <version>${spencerPerceval.version}</version>
+    </dependency>
     <dependency>
       <groupId>org.geotools</groupId>
       <artifactId>gt-shapefile</artifactId>
